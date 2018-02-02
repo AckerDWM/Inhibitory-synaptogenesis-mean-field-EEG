@@ -1,14 +1,15 @@
-# Inhibitory-synaptogenesis-mean-field-EEG
+# Interneuron-interneuron synaptogenesis does not preclude seizure suppression by generalized inhibitory synaptogenesis in the hippocampus
+*A micro-manuscript by Daniel Acker*
 
 **Introduction**
 
 In a recent research manuscript, I describe a novel epilepsy therapy in which seizures are treated by driving the formation of new inhibitory synapses in the hippocampus (Acker et al., in review). One potential complication of this theraputic approach is that new inhibitory synapses could be formed onto inhibitory neurons, thus suppressing inhibitory activity. Here, I use a computational model to address this concern.
 
-**Results**
+**Results and Discussion**
 
 To address the question of whether increased interneuron inhibition could be counterproductive, I turned to the classic Wendling-Chauvel mean field model of hippocampal seizure generation. This model consists of a central excitatory cell population with an excitatory feedback loop and two inhibitory feedback loops, one with fast inhibitory post-synaptic currents (IPSCs) and one with slow IPSCs. The slow inhibitory population innervates both the excitatory population and the fast, inhibitory population. The main output of the model is simulated local field potential (LFP) resulting from the sum of post-synaptic potentials in the central excitatory population. We manipulated synapse number between various cell types in this model and found that the increased inhibition resulting from increased interneuron-to-excitatory-neuron synapse number was sufficient to abolish or attenuate seizure-like activity in the simulated LFP (Fig. 1). This effect was typically not reversed by a 30% increase in interneuron-to-interneuron synapse number. In addition, our *in vivo* seizure experiments (Acker et al., in review) demonstrate that Sema4D treated mice were resistant to seizure induction, providing empirical evidence that any disinhibition does not overshadow the effect of an overall increase in inhibition.
 
-<img src="https://github.com/AckerDWM/Inhibitory-synaptogenesis-mean-field-EEG/blob/master/plot.png" alt="alt text" width="500" height="500">
+<img src="https://github.com/AckerDWM/Inhibitory-synaptogenesis-mean-field-EEG/blob/master/figure-with-error-bars.png" alt="alt text" width="500" height="500">
 
 **Figure 1. Effect of increased GABAergic synapse density on simulated LFP in the Wendling-Chauvel model.** LFP was simulated in the Wendling-Chauvel model across a wide range of conditions. (**A**) Log de-trended LFP power under all simulated conditions. Synapse number alterations were baseline (Control), a 30% increase in IE synapses (IE), and a 30% increase in both IE and II synapses (II). The variable A is excitatory synaptic gain, B is slow inhibitory synaptic gain, and G is fast inhibitory synaptic gain. (**B**) Log de-trended LFP power versus synapse number alteration and excitatory synaptic gain. Green asterisks indicate a decrease compared to control at the corresponding level of excitatory synaptic gain; red asterisks indicate an increase. ***p<0.001, **p<0.01, two-tailed Wilcoxon tests with Bonferroni corrections. (**C**) Simulated LFP demonstrating seizure abolition by increased GABAergic synapse number. This effect was not reversed in the II condition. Simulation parameters: A=5, B=35, G=28.
 
