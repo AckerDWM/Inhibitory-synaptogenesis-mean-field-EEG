@@ -2,7 +2,7 @@
 
 **Introduction**
 
-In a recent research manuscript, I describe a novel epilepsy therapy in which seizures are treated by driving the formation of new inhibitory synapses in the hippocampus. One potential complication of this theraputic approach is that new inhibitory synapses could be formed onto inhibitory neurons, thus suppressing inhibitory activity. Here, I use a computational model to address this concern.
+In a recent research manuscript, I describe a novel epilepsy therapy in which seizures are treated by driving the formation of new inhibitory synapses in the hippocampus (Acker et al., in review). One potential complication of this theraputic approach is that new inhibitory synapses could be formed onto inhibitory neurons, thus suppressing inhibitory activity. Here, I use a computational model to address this concern.
 
 **Results**
 
@@ -15,3 +15,7 @@ To address the question of whether increased interneuron inhibition could be cou
 **Methods**
 
 I implemented the Wendling-Chauvel seizure generation model with a step size of five milliseconds. Model parameters were taken from the table 1 of the original paper. For the somatic average time constant 1/g, g was set to 350 sec-1 (42). For my simulations, I modified the synapse number parameters C4, C6, and C7. Note that in table 1 of the original paper C6 is said to represent synapses in the fast inhibitory loop, while C7 is said to represent II synapses. This appears to be a typo. Inspection of the model equations and the diagram in figure 1b reveals that C6 represents II synapses, while C7 represents fast IE synapses. My simulations were run for 1200 steps, resulting in 6 seconds of simulated LFP, of which the final 5 seconds were used for further analysis. Independent simulations were run at all levels of a parameter grid comprising all combinations of excitatory synaptic gain (A), slow inhibitory synaptic gain (B), and fast inhibitory synaptic gain (G), over the ranges (3, 7), (1, 50), and (1, 30) respectively in increments of one. This parameter space is similar to that originally explored by Wendling et al. (2002).
+
+**References**
+
+Wendling F, Bartolomei F, Bellanger JJ, Chauvel P (2002) Epileptic fast activity can be explained by a model of impaired GABAergic dendritic inhibition. Eur J Neurosci 15(9):1499-508.
