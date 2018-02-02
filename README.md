@@ -19,4 +19,6 @@ I implemented the Wendling-Chauvel seizure generation model with a step size of 
 
 **References**
 
+Acker D, Wong I, Kang M, Paradis S. Semaphorin 4D promotes inhibitory synapse formation and suppresses seizures in vivo. *In review*.
+
 Wendling F, Bartolomei F, Bellanger JJ, Chauvel P (2002) Epileptic fast activity can be explained by a model of impaired GABAergic dendritic inhibition. Eur J Neurosci 15(9):1499-508.
