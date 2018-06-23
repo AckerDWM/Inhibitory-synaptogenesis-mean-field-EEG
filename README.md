@@ -3,11 +3,11 @@
 
 **Introduction**
 
-In a recent research manuscript, I describe a novel epilepsy therapy in which seizures are treated by driving the formation of new inhibitory synapses in the hippocampus (Acker et al., in review). One potential complication of this theraputic approach is that new inhibitory synapses could be formed onto inhibitory neurons, thus suppressing inhibitory activity. Here, I use a computational model to address this concern.
+In a recent research manuscript, I describe a novel epilepsy therapy in which seizures are treated by driving the formation of new inhibitory synapses in the hippocampus (Acker et al., 2018). One potential complication of this theraputic approach is that new inhibitory synapses could be formed onto inhibitory neurons, thus suppressing inhibitory activity. Here, I use a computational model to address this concern.
 
 **Results and Discussion**
 
-To address the question of whether increased interneuron inhibition could be counterproductive, I turned to the classic Wendling-Chauvel mean field model of hippocampal seizure generation (Wendling et al., 2002). This model consists of a central excitatory cell population with an excitatory feedback loop and two inhibitory feedback loops, one with fast inhibitory post-synaptic currents (IPSCs) and one with slow IPSCs. The slow inhibitory population innervates both the excitatory population and the fast, inhibitory population. The main output of the model is simulated local field potential (LFP) resulting from the sum of post-synaptic potentials in the central excitatory population. We manipulated synapse number between various cell types in this model and found that the increased inhibition resulting from increased interneuron-to-excitatory-neuron synapse number was sufficient to abolish or attenuate seizure-like activity in the simulated LFP (Fig. 1). This effect was typically not reversed by a 30% increase in interneuron-to-interneuron synapse number. In addition, our *in vivo* seizure experiments (Acker et al., in review) demonstrate that Sema4D treated mice were resistant to seizure induction, providing empirical evidence that any disinhibition does not overshadow the effect of an overall increase in inhibition.
+To address the question of whether increased interneuron inhibition could be counterproductive, I turned to the classic Wendling-Chauvel mean field model of hippocampal seizure generation (Wendling et al., 2002). This model consists of a central excitatory cell population with an excitatory feedback loop and two inhibitory feedback loops, one with fast inhibitory post-synaptic currents (IPSCs) and one with slow IPSCs. The slow inhibitory population innervates both the excitatory population and the fast, inhibitory population. The main output of the model is simulated local field potential (LFP) resulting from the sum of post-synaptic potentials in the central excitatory population. We manipulated synapse number between various cell types in this model and found that the increased inhibition resulting from increased interneuron-to-excitatory-neuron synapse number was sufficient to abolish or attenuate seizure-like activity in the simulated LFP (Fig. 1). This effect was typically not reversed by a 30% increase in interneuron-to-interneuron synapse number. In addition, our *in vivo* seizure experiments (Acker et al., 2018) demonstrate that Sema4D treated mice were resistant to seizure induction, providing empirical evidence that any disinhibition does not overshadow the effect of an overall increase in inhibition.
 
 <img src="https://github.com/AckerDWM/Inhibitory-synaptogenesis-mean-field-EEG/blob/master/figure-with-error-bars.png" alt="alt text" width="500" height="500">
 
@@ -19,6 +19,6 @@ I implemented the Wendling-Chauvel seizure generation model with a step size of 
 
 **References**
 
-Acker D, Wong I, Kang M, Paradis S. Semaphorin 4D promotes inhibitory synapse formation and suppresses seizures in vivo. *In review*.
+Acker D, Wong I, Kang M, Paradis S. (2018) Semaphorin 4D promotes inhibitory synapse formation and suppresses seizures in vivo. *In review*. Epilepsia 59(6):1257-1268.
 
 Wendling F, Bartolomei F, Bellanger JJ, Chauvel P (2002) Epileptic fast activity can be explained by a model of impaired GABAergic dendritic inhibition. Eur J Neurosci 15(9):1499-508.
